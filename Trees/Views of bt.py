@@ -7,6 +7,8 @@ class newNode:
 ## Views of Binary Tree
 ## D.S used -> Queue
 ## Algo useed -> Level order Traversal + Vertical Order Traversal
+
+
 def leftView(root):
     if not root:
         return
@@ -33,6 +35,10 @@ def leftView(root):
         else:
             continue
     print(*ans)
+    
+    
+    
+    
 
 def rightView(root):
     if not root:
@@ -62,6 +68,9 @@ def rightView(root):
         else:
             continue
     print(*ans)
+    
+    
+    
 
 def topView(root):
     if not root:
@@ -94,6 +103,10 @@ def topView(root):
             ans1[d[i]]=i
     print(*list(ans1.values()))
     
+    
+    
+    
+    
 def bottomView(root):
     if not root:
         return
@@ -125,6 +138,8 @@ def bottomView(root):
     print(*list(ans1.values()))
     
     
+    
+## TEST CASE    
 root = newNode(10)  
 root.left = newNode(12)  
 root.right = newNode(3)  
@@ -133,5 +148,7 @@ root.right.left = newNode(5)
 root.right.left.right = newNode(6)  
 root.right.left.right.left = newNode(18)  
 root.right.left.right.right = newNode(7) 
-#leftView(root) 
+leftView(root) 
 bottomView(root)
+rightView(root)
+topView(root)
