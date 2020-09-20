@@ -6,7 +6,7 @@ class newNode:
 
 ## Views of Binary Tree
 ## D.S used -> Queue
-## Algo useed -> Level order Traversal + Vertical Order Traversal
+## Algo used -> Level order Traversal + Vertical Order Traversal
 
 
 def leftView(root):
