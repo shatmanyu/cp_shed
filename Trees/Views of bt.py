@@ -13,7 +13,7 @@ def leftView(root):
     q=[];ans=[]
     q.append(root);ans.append(root.val);q.append(None)
     while q:
-        temp=q[0]
+        temp=q.pop(0)
         printt=False
         if temp:
             while temp:
@@ -31,7 +31,7 @@ def leftView(root):
                 temp=q.pop(0)
             q.append(None)
         else:
-            q.pop(0)
+            continue
     print(*ans)
 
 def rightView(root):
